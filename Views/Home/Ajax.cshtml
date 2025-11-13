@@ -54,7 +54,7 @@
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-XSRF-TOKEN': token
+                    'RequestVerificationToken': token
                 },
                 body: JSON.stringify({ Name: name, Count: parseInt(count) })
             })
